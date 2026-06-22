@@ -79,3 +79,24 @@ $(document).ready(function(){
         $(".location-menu-wraper").fadeOut()
     })
 }) 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById("mobile-manu-icon-item");
+    const leftNav = document.querySelector(".LeftNavigation");
+    const overlay = document.getElementById("navOverlay");
+
+    // Toggle Mobile Menu Drawer
+    const toggleMenu = () => {
+        leftNav.classList.toggle("mobile-active");
+        overlay.classList.toggle("mobile-active");
+        
+        // Dynamically swap modern bootstrap view icons
+        if(leftNav.classList.contains("mobile-active")) {
+            menuIcon.classList.replace("bi-list", "bi-x");
+        } else {
+            menuIcon.classList.replace("bi-x", "bi-list");
+        }
+    };
+
+    menuIcon.addEventListener("click", toggleMenu);
+    overlay.addEventListener("click", toggleMenu);
+});

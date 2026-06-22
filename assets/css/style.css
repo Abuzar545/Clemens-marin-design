@@ -41,6 +41,7 @@ nav {
     z-index: 100;
 }
 
+
 .full-header {
     background-color: white;
     width: 100%;
@@ -2793,17 +2794,846 @@ nav {
     left: 0;
 }
 /* responsib------------------------------------------------------------------------------------------------------------------------------------ */
-@media (max-width : 1320px){
-    .navLogo-dev{
-        max-width: 170px;
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Max Width 1320px */
+@media (max-width: 1320px) {
+    .full-header {
+        padding: 3px 40px 1px 40px; /* Reduce extra side padding */
     }
-    .full-header{
-        padding: 3px 30px 1px 30px;
+    .right-navigation {
+        gap: 40px; /* Shrink heavy gap gaps */
     }
-    .navlink-content{
-        gap: 24px;
+    .navlink-content {
+        gap: 25px;
     }
-    .right-navigation{
-        gap: 30px;
+}
+/* Max Width 1140px */
+@media (max-width: 1140px) {
+    .full-header {
+        padding: 3px 20px 1px 20px;
     }
+    .right-navigation {
+        gap: 20px;
+    }
+    .centralNavLink, .right-navigation-text {
+        font-size: 14px; /* Slightly scale typography down */
+    }
+    .selectedStoreName {
+        font-size: 20px;
+    }
+}
+
+/* Max Width 991px (Burger Menu Activation Point) */
+@media (max-width: 991px) {
+    .mobile-manu-icon {
+        display: block; /* Reveal Hamburger Icon */
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Transform left navigation links into an off-canvas mobile drawer */
+    .LeftNavigation {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Hidden offscreen by default */
+        width: 280px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Trigger layout when menu is active via JavaScript */
+    .LeftNavigation.mobile-active {
+        left: 0;
+    }
+
+    .navlink-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    /* Keep header items aligned cleanly with layout changes */
+    .full-header {
+        justify-content: space-between;
+    }
+
+    .navLogo-dev {
+        transform: none; /* Normalize position */
+        left: 0;
+        max-width: 180px;
+    }
+    
+    /* Backdrop styling */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
+        z-index: 999;
+    }
+    .nav-overlay.mobile-active {
+        display: block;
+    }
+}
+
+/* Max Width 768px */
+@media (max-width: 768px) {
+    .right-navigation-text {
+        display: none; /* Hide secondary complex links on smaller tablets */
+    }
+    .selectedStoreName {
+        font-size: 18px;
+    }
+    .selectStoreNumber {
+        font-size: 13px;
+    }
+}
+
+/* Max Width 568px */
+@media (max-width: 568px) {
+    .storeCityandPhone {
+        display: none; /* Hide store text on compact devices */
+    }
+    .navLogo-dev {
+        max-width: 140px;
+    }
+    #mobile-manu-icon-item {
+        font-size: 32px;
+    }
+}
+
+/* Max Width 320px */
+@media (max-width: 320px) {
+    .full-header {
+        padding: 3px 10px 1px 10px;
+    }
+    .selectedStoreName {
+        font-size: 15px; /* Minimal sizing for compact layout restrictions */
+    }
+    .navLogo-dev {
+        max-width: 110px;
+    }
+}
+
+
+
+/* ===============================
+1440px
+================================= */
+
+@media (max-width:1440px){
+
+.full-header{
+padding:5px 50px;
+}
+
+.right-navigation{
+gap:50px;
+}
+
+.heroContent{
+max-width:850px;
+}
+
+.h1heading{
+font-size:38px;
+}
+
+.h2heading{
+font-size:42px;
+}
+
+.h3heading{
+font-size:42px;
+}
+
+.premium-Trade-content{
+left:28%;
+}
+
+}
+
+
+/* ===============================
+1320px
+================================= */
+
+@media (max-width:1320px){
+
+.full-header{
+padding:5px 30px;
+}
+
+.navlink-content{
+gap:25px;
+}
+
+.right-navigation{
+gap:30px;
+}
+
+.centralNavLink{
+font-size:14px;
+}
+
+.selectedStoreName{
+font-size:20px;
+}
+
+.heroContent{
+max-width:800px;
+}
+
+.h2heading{
+font-size:38px;
+}
+
+.h3heading{
+font-size:38px;
+}
+
+.footer-logo-dev{
+max-width:250px;
+}
+
+}
+
+
+/* ===============================
+1140px
+================================= */
+
+@media (max-width:1140px){
+
+.full-header{
+padding:10px 20px;
+}
+
+.navlink-content{
+gap:18px;
+}
+
+.centralNavLink{
+font-size:13px;
+}
+
+.right-navigation{
+gap:15px;
+}
+
+.selectStoreNumber{
+font-size:14px;
+}
+
+.selectedStoreName{
+font-size:18px;
+}
+
+.heroContent{
+max-width:700px;
+}
+
+.h1heading{
+font-size:34px;
+line-height:42px;
+}
+
+.h2heading{
+font-size:34px;
+line-height:40px;
+}
+
+.h3heading{
+font-size:34px;
+line-height:40px;
+}
+
+.brand-icon{
+width:220px;
+height:90px;
+}
+
+.brand-icon-manu{
+width:170px;
+}
+
+.footer-logo-dev{
+max-width:220px;
+}
+
+}
+
+
+/* ===============================
+991px
+================================= */
+
+@media (max-width:991px){
+
+body{
+overflow-x:hidden;
+}
+
+.mobile-manu-icon{
+display:block;
+cursor:pointer;
+}
+
+.LeftNavigation{
+
+position:fixed;
+
+top:0;
+
+left:-320px;
+
+width:300px;
+
+height:100vh;
+
+background:#fff;
+
+padding:100px 30px;
+
+transition:.3s;
+
+z-index:1001;
+
+overflow-y:auto;
+
+}
+
+.LeftNavigation.mobile-active{
+left:0;
+}
+
+.navlink-content{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:25px;
+
+}
+
+.full-header{
+
+padding:15px 20px;
+
+}
+
+.navLogo-dev{
+
+transform:none;
+
+left:0;
+
+max-width:170px;
+
+}
+
+.right-navigation-text{
+
+display:none;
+
+}
+
+.right-navigation{
+
+gap:15px;
+
+}
+
+.hero-section{
+
+padding-top:55%;
+
+}
+
+.heroContent{
+
+width:90%;
+
+max-width:100%;
+
+gap:25px;
+
+}
+
+.h1heading{
+
+font-size:30px;
+
+line-height:38px;
+
+}
+
+.h2heading{
+
+font-size:30px;
+
+line-height:38px;
+
+}
+
+.h3heading{
+
+font-size:30px;
+
+line-height:38px;
+
+}
+
+.home-btn-dev{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.brand-icon{
+
+width:180px;
+
+height:80px;
+
+}
+
+.brand-icon-manu{
+
+width:150px;
+
+}
+
+.premium-Trade{
+
+padding-top:70%;
+
+}
+
+.premium-Trade::after{
+
+width:100%;
+
+}
+
+.premium-Trade-content{
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:90%;
+
+max-width:100%;
+
+}
+
+.service-wrapper{
+
+padding-top:60%;
+
+margin-bottom:10px;
+
+}
+
+.drown-content{
+
+margin-top:30px;
+
+}
+
+.footer-right-nodev1{
+
+border:none;
+
+margin-top:30px;
+
+}
+
+.navlink-content-footer{
+
+margin-right:0;
+
+}
+
+}
+
+
+/* ===============================
+768px
+================================= */
+
+@media (max-width:768px){
+
+.right-navigation-number{
+
+display:none;
+
+}
+
+.navLogo-dev{
+
+max-width:150px;
+
+}
+
+.hero-section{
+
+padding-top:75%;
+
+}
+
+.h1heading{
+
+font-size:28px;
+
+line-height:34px;
+
+}
+
+.h2heading{
+
+font-size:26px;
+
+line-height:32px;
+
+}
+
+.h3heading{
+
+font-size:26px;
+
+line-height:32px;
+
+}
+
+.para{
+
+font-size:15px;
+
+line-height:24px;
+
+}
+
+.home-btn-dev{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.whitebtn{
+
+width:100%;
+
+}
+
+.bluebtn{
+
+width:100%;
+
+}
+
+.brand-icon{
+
+width:150px;
+
+height:70px;
+
+}
+
+.brand-icon-manu{
+
+width:130px;
+
+}
+
+.drowning-btn{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.subscribe-box{
+
+width:100%;
+
+max-width:400px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footerli{
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.social-media{
+
+margin-top:50px;
+
+}
+
+}
+
+
+/* ===============================
+576px
+================================= */
+
+@media (max-width:576px){
+
+.full-header{
+
+padding:10px 15px;
+
+}
+
+.hero-section{
+
+padding-top:100%;
+
+min-height:500px;
+
+}
+
+.heroContent{
+
+width:95%;
+
+}
+
+.h1heading{
+
+font-size:24px;
+
+line-height:32px;
+
+}
+
+.h2heading{
+
+font-size:22px;
+
+line-height:28px;
+
+}
+
+.h3heading{
+
+font-size:22px;
+
+line-height:28px;
+
+}
+
+.selectStoreNumber{
+
+display:none;
+
+}
+
+.brand-icon{
+
+width:120px;
+
+height:60px;
+
+}
+
+.brand-icon-manu{
+
+width:110px;
+
+}
+
+.premium-Trade{
+
+padding-top:120%;
+
+}
+
+.service-wrapper{
+
+padding-top:75%;
+
+}
+
+.mapouter,
+.gmap_canvas{
+
+height:220px;
+
+}
+
+.subscribe-box{
+
+flex-direction:column;
+
+height:auto;
+
+gap:10px;
+
+background:none;
+
+}
+
+.subscribe-input{
+
+height:46px;
+
+width:100%;
+
+}
+
+.subscribe-btn{
+
+width:100%;
+
+height:46px;
+
+}
+
+.copyright{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.bottomLinkLine::after{
+
+display:none;
+
+}
+
+.footerBottomLink{
+
+font-size:14px;
+
+}
+
+}
+
+
+/* ===============================
+320px
+================================= */
+
+@media (max-width:320px){
+
+.full-header{
+
+padding:8px 10px;
+
+}
+
+.navLogo-dev{
+
+max-width:120px;
+
+}
+
+#mobile-manu-icon-item{
+
+font-size:30px;
+
+}
+
+.hero-section{
+
+min-height:550px;
+
+}
+
+.h1heading{
+
+font-size:20px;
+
+line-height:28px;
+
+}
+
+.h2heading{
+
+font-size:18px;
+
+line-height:24px;
+
+}
+
+.h3heading{
+
+font-size:18px;
+
+line-height:24px;
+
+}
+
+.para{
+
+font-size:14px;
+
+line-height:22px;
+
+}
+
+.whitebtn,
+.bluebtn{
+
+font-size:13px;
+
+padding:12px;
+
+}
+
+.brand-icon{
+
+width:100px;
+
+}
+
+.brand-icon-manu{
+
+width:95px;
+
+}
+
+.subscribe-input{
+
+font-size:14px;
+
+}
+
+.footerBottomLink{
+
+font-size:12px;
+
+}
+
 }

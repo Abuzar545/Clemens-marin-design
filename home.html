@@ -41,8 +41,10 @@
                     <li><a href="javascript:void(0)" class="centralNavLink">Service Center</a></li>
                 </ul>
             </div>
-            <!-- mobile-manu icons------------------------ -->
-            <li class="mobile-manu-icon"><i class="bi bi-list" id="mobile-manu-icon-item"></i></i></li>
+            <!-- mobile-menu icons------------------------ -->
+            <div class="mobile-manu-icon">
+                <i class="bi bi-list" id="mobile-manu-icon-item"></i>
+            </div>
             <!-- mobile-manu icons------------------------ -->
             <div class="navLogo-dev">
                 <img src="./assets/images/home/navbar-logo.png" class="navLogo-dev-item" alt="">
@@ -88,26 +90,28 @@
                         </h6>
                     </div>
                     <div class="location-menu-wraper">
-                         <div class="location-menu-content">
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Eugene</p>
-                            <h4 class="h4heading">541.688.5483</h4>
-                        </a>
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Portland</p>
-                            <h4 class="h4heading">503.655.0160</h4>
-                        </a>
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Troutdale</p>
-                            <h4 class="h4heading">503.492.7400</h4>
-                        </a>
+                        <div class="location-menu-content">
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Eugene</p>
+                                <h4 class="h4heading">541.688.5483</h4>
+                            </a>
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Portland</p>
+                                <h4 class="h4heading">503.655.0160</h4>
+                            </a>
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Troutdale</p>
+                                <h4 class="h4heading">503.492.7400</h4>
+                            </a>
+                        </div>
                     </div>
-                    </div>
-                   
+
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Dim overlay backdrop for mobile view -->
+    <div class="nav-overlay" id="navOverlay"></div>
     <!-- navbar section  ------------------------>
     <!-- menu inventery------------------- -->
     <div class="menuinv-wrapper">
@@ -686,7 +690,7 @@
     <section>
         <div class="container-fluid mt-1">
             <div class="row">
-                <div class="col-lg-4 col-12 px-0 pr-xl-1">
+                <div class="col-lg-4 col-md-6 col-12 px-0 pr-lg-1 mb-2">
                     <div class="service-wrapper">
                         <img src="./assets/images/home/moters-img.png" alt="">
                         <div class="service-wrapper-content">
@@ -694,7 +698,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 px-0">
+                <div class="col-lg-4 col-md-6 col-12 px-0 mb-2">
                     <div class="service-wrapper">
                         <img src="./assets/images/home/Service-img.png" alt="">
                         <div class="service-wrapper-content">
@@ -702,7 +706,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 px-0 pl-xl-1">
+                <div class="col-lg-4 col-md-12 col-12 px-0 pl-lg-1 mb-2">
                     <div class="service-wrapper">
                         <img src="./assets/images/home/financing-img.png" alt="">
                         <div class="service-wrapper-content">
@@ -721,12 +725,12 @@
             <div class="row">
                 <div class="col-lg-9 col-11 mx-auto">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 mb-4">
                             <div class="drownimg-wrapper">
                                 <img src="./assets/images/home/Drown.png" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 my-auto">
+                        <div class="col-lg-6 col-md-12 my-auto">
                             <div class="drown-content">
                                 <h3 class="h3heading">A Whole New Level of Control</h3>
                                 <p class="para" style="color: var(--Blackish, #221F20);">Clemens Marina offers the
@@ -747,7 +751,7 @@
             <div class="row">
                 <div class="col-lg-9 col-11 mx-auto">
                     <div class="row">
-                        <div class="col-md-6 my-auto">
+                        <div class="col-lg-6 col-md-12 my-auto order-2 order-lg-1">
                             <div class="drown-content">
                                 <h3 class="h3heading">Engines & Accessories</h3>
                                 <p class="para" style="color: var(--Blackish, #221F20);">In addition to fully packaged
@@ -765,7 +769,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 order-1 order-lg-2">
                             <div class="drownimg-wrapper">
                                 <img src="./assets/images/home/engine.png" alt="">
                             </div>
@@ -783,12 +787,12 @@
             <div class="row">
                 <div class="col-lg-11 col-12 mx-auto">
                     <div class="row">
-                        <div class="col-md-6 px-0 mx-0">
+                        <div class="col-lg-6 col-12 px-0">
                             <div class="welcomeimg-wrapper">
                                 <img src="./assets/images/home/welcome-img.png" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 px-0 mx-0">
+                        <div class="col-lg-6 col-12 px-0">
                             <div class="welcome-content-wrapper">
                                 <div class="drown-content mx-auto">
                                     <h3 class="h2heading" style="color: #fff; text-align: start;">WELCOME TO Clemens
@@ -821,7 +825,7 @@
     <section class="social-media">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-5 mx-auto">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-10 mx-auto">
                     <h6 class="h6heading mb-3">Follow Us on Social</h6>
                     <h2 class="h2heading" style="text-align: start; text-transform: lowercase;">#Clemensmarinalife</h2>
                     <div class="social-media-icon mx-auto mt-3 mb-4"><a href="javascript:void(0)"><img
@@ -886,7 +890,7 @@
                         <p class="para">Oregon's Largest Aluminum Boat Dealerships</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <div class="map-card">
                                 <div class="mapouter">
                                     <div class="gmap_canvas">
@@ -911,7 +915,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <div class="map-card">
                                 <div class="mapouter">
                                     <div class="gmap_canvas">
@@ -936,7 +940,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <div class="map-card">
                                 <div class="mapouter">
                                     <div class="gmap_canvas">
@@ -990,16 +994,16 @@
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row" id="footer-top">
-                        <div class="col-9">
+                        <div class="col-lg-9 col-12">
                             <div class="row px-0">
-                                <div class="col-lg-4 px-0">
+                                <div class="col-lg-4 col-12 px-0">
                                     <div class="footer-logo-dev px-0">
                                         <img src="./assets/images/home/navbar-logo.png" alt="">
                                     </div>
                                 </div>
-                                <div class="col-8 px-0">
+                                <div class="col-lg-8 col-12 px-0">
                                     <div class="row">
-                                        <div class="col-4 px-0">
+                                        <div class="col-lg-4 col-md-4 col-12 px-0 mb-4">
                                             <ul class="navlink-content-footer">
                                                 <li class="h6heading">Boats & Motors</li>
                                                 <li class="footerli">
@@ -1022,7 +1026,7 @@
                                                 <li>Trade / Sell Your Boat</li>
                                             </ul>
                                         </div>
-                                        <div class="col-4 px-0">
+                                        <div class="col-lg-4 col-md-4 col-12 px-0 mb-4">
                                             <ul class="navlink-content-footer">
                                                 <li class="h6heading">Brands</li>
                                                 <li class="footerli">
@@ -1048,7 +1052,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-4 px-0">
+                                        <div class="col-lg-4 col-md-4 col-12 px-0 mb-4">
                                             <ul class="navlink-content-footer">
                                                 <li class="h6heading">MORE</li>
                                                 <li>Gallery</li>
@@ -1066,7 +1070,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 footer-right-nodev1">
+                        <div class="col-lg-3 col-12 footer-right-nodev1">
                             <div class="foot-rightNo mx-auto">
                                 <div class="footer-right-nodev">
                                     <a href="javascript:void(0)" class="footer-a">Eugene ></a>
