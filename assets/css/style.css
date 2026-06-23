@@ -3992,3 +3992,219 @@ font-size:12px;
    
 
 }
+/* --- Base Styles & Layout Setup --- */
+.footer {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Base Top Layout (Mobile view: 1 column) */
+#footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Left Area Holder */
+.footer-left-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Links Area Holder (Mobile view: Stacked links) */
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.footer-logo-dev {
+    max-width: 220px;
+}
+
+.footer-logo-dev img {
+    width: 100%;
+    height: auto;
+}
+
+.navlink-content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerli {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.footerli img {
+    width: 12px;
+    height: 15px;
+}
+
+/* Right Content Column */
+.footer-right-nodev1 {
+    border-left: none;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 30px;
+}
+
+.footer-right-nodev {
+    margin-bottom: 30px;
+}
+
+.footer-a {
+    color: var(--Aqua, #007AA9);
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Bottom Area */
+#footer-bottom {
+    border-top: 1px solid #D9D9D9;
+}
+
+.footer-bottom-wrapper {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footerBottomLink {
+    color: var(--Blackish, #221F20);
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.bottomLinkLine {
+    position: relative;
+}
+
+
+/* --- Responsive Breakpoints (Media Queries) --- */
+
+/* 1. Mobile Extra Large / Small Tablets (min-width: 576px) */
+@media (min-width: 576px) {
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 link columns side-by-side */
+    }
+}
+
+/* 2. Tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    .footer-links-grid {
+        grid-template-columns: repeat(3, 1fr); /* All 3 link columns side-by-side */
+    }
+    
+    .footer-right-nodev1 {
+        border-top: none;
+        border-left: 1px solid #D9D9D9;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+    
+    .foot-rightNo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Spread branch numbers evenly */
+        gap: 20px;
+    }
+    
+    .footer-right-nodev {
+        margin-bottom: 0;
+    }
+}
+
+/* 3. Small Laptops / Landscape Tablets (min-width: 991px) */
+@media (min-width: 991px) {
+    #footer-top {
+        grid-template-columns: 3fr 1fr; /* Split master area: links left, contact details right */
+    }
+    
+    .footer-left-side {
+        grid-template-columns: 1fr 3fr; /* Separate logo column and links side-by-side */
+    }
+    
+    .foot-rightNo {
+        grid-template-columns: 1fr; /* Re-stack contact details nicely inside their side pane */
+        gap: 0;
+    }
+    
+    .footer-right-nodev {
+        margin-bottom: 40px;
+    }
+    
+    .footerBottomLink {
+        font-size: 16px;
+    }
+    
+    .bottomLinkLine::after {
+        content: "";
+        width: 1px;
+        height: 16px;
+        background: #201e1f;
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* 4. Medium Laptops (min-width: 1140px) */
+@media (min-width: 1140px) {
+    .footer-container {
+        padding: 0 30px;
+    }
+    .footer-left-side {
+        gap: 50px;
+    }
+}
+
+/* 5. Desktop Standard Screens (min-width: 1320px) */
+@media (min-width: 1320px) {
+    #footer-top {
+        gap: 60px;
+    }
+    .footer-right-nodev1 {
+        padding-left: 60px;
+    }
+}
+
+/* 6. Ultra-Wide Displays (min-width: 1440px) */
+@media (min-width: 1440px) {
+    .footer-container {
+        padding: 0; /* Fully locked to standard max-width spacing layout */
+    }
+}
