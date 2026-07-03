@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <!-- navbar section ------------------ -->
+        <!-- navbar section ------------------ -->
     <nav>
         <div class="full-header">
             <div class="LeftNavigation">
@@ -39,9 +39,10 @@
                     <li><a href="javascript:void(0)" class="centralNavLink inventery-menu">Boat sales</a></li>
                     <li><a href="javascript:void(0)" class="centralNavLink outtboard">Outboards</a></li>
                     <li><a href="javascript:void(0)" class="centralNavLink">Service Center</a></li>
+                  
                 </ul>
             </div>
-          <!-- mobile-menu icons------------------------ -->
+            <!-- mobile-menu icons------------------------ -->
             <div class="mobile-manu-icon">
                 <i class="bi bi-list" id="mobile-manu-icon-item"></i>
             </div>
@@ -90,31 +91,36 @@
                         </h6>
                     </div>
                     <div class="location-menu-wraper">
-                         <div class="location-menu-content">
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Eugene</p>
-                            <h4 class="h4heading">541.688.5483</h4>
-                        </a>
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Portland</p>
-                            <h4 class="h4heading">503.655.0160</h4>
-                        </a>
-                        <a href="">
-                            <p class="text-dark" style="text-align: end;">Troutdale</p>
-                            <h4 class="h4heading">503.492.7400</h4>
-                        </a>
+                        <div class="location-menu-content">
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Eugene</p>
+                                <h4 class="h4heading">541.688.5483</h4>
+                            </a>
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Portland</p>
+                                <h4 class="h4heading">503.655.0160</h4>
+                            </a>
+                            <a href="">
+                                <p class="text-dark" style="text-align: end;">Troutdale</p>
+                                <h4 class="h4heading">503.492.7400</h4>
+                            </a>
+                        </div>
                     </div>
-                    </div>
-                   
+
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Dim overlay backdrop for mobile view -->
+    <div class="nav-overlay" id="navOverlay"></div>
     <!-- navbar section  ------------------------>
-    <!-- menu inventery------------------- -->
+ <!-- menu inventery------------------- -->
     <div class="menuinv-wrapper">
         <div class="container-fluid">
-
+            <button type="button" class="close menu-closebutton" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                CLOSE
+            </button>
             <div class="row">
                 <div class="col-xl-10 col-lg-12 mx-auto px-0">
                     <div class="row my-4">
@@ -207,15 +213,22 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
         </div>
     </div>
     <!-- menu inventery------------------- -->
     <!-- service menu----------------- -->
     <div class="service-menu-rapper">
         <div class="container-fluid">
+            <button type="button" class="close menu-closebutton" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                Close
+            </button>
             <div class="row">
-                <div class="col-lg-10 col-10 mx-auto">
+                <div class="col-7 mx-auto">
                     <div class="row">
                         <div class="col-6">
                             <div class="invimgrapper overlay" style="padding-top: 48%;">
@@ -242,9 +255,6 @@
         </div>
     </div>
     <!-- service menu----------------- -->
-    <!-- menu-more----------------------------- -->
-
-    <!-- menu-resource----------------------------- -->
     <!-- Hero section start--------------------------- -->
     <section>
         <div class="service-hero-wrapper overlay-hape" style="padding-top: 33%;">
@@ -262,19 +272,19 @@
     <section class="godfrey-logo">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-8 col-11 mx-auto">
+                <div class="col-xl-9 col-11 mx-auto">
                     <div class="row">
-                        <div class="col-lg-6 px-0 mb-2 mb-lg-0" style="width: 100%; display: flex;">
+                        <div class="col-lg-5 px-0 mb-2 mb-lg-0" style="width: 100%; display: flex;">
                             <div class="godfreylogo-dev">
                                 <img src="./assets/images/yamaha/yamahalogo.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 px-0">
-                            <div class="row px-5">
-                                <div class="col-6 px-0">
+                        <div class="col-lg-7 px-1">
+                            <div class="row px-xl-5">
+                                <div class="col-md-6 ">
                                     <a href="javascript:void(0)" class="blackbtn">ORDER </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 mt-3 mt-md-0 w-100">
                                     <a href="javascript:void(0)" class="blackbtn">In-Stock Inventory </a>
                                 </div>
                             </div>
@@ -292,7 +302,7 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-xl-8 col-10 mx-auto px-0">
+                <div class="col-xl-8 col-10 mx-auto">
                     <div class="row">
                         <div class="col-lg-6 col-12 my-auto px-0">
                             <div class="drown-content" style="max-width: 520px;">
@@ -539,9 +549,8 @@
 
     </section>
     <!-- Available Inventory section----------------- -->
-
-    <!-- reel section  start-------------------------------- -->
-    <section class="reel-section" style="margin-top: 120px;">
+   <!-- reel section  start-------------------------------- -->
+    <section class="reel-section reel-margin">
         <div class="reel-section-content">
             <h2 class="h2heading" style="color: #fff;">Reel In the Good Stuff</h2>
             <p class="para">Our Newsletter informs of promotions, events, Clemens Marina news, and more.</p>
@@ -557,18 +566,17 @@
         </div>
     </section>
     <!-- reel section  end-------------------------------- -->
-
-         <!-- footer section ----------------------------------------- -->
+     <!-- footer section ----------------------------------------- -->
     <section class="footer">
-        <div class="footer-container">
+        <div class="container-fluid">
             <div id="footer-top">
+                
                 <div class="footer-left-side">
-                    <div class="footer-logo-dev">
+                    <div class="footer-logo-dev mx-auto">
                         <img src="./assets/images/home/navbar-logo.png" alt="Logo">
                     </div>
-
-                    <div class="footer-links-grid">
-                        <div class="footer-col">
+                    <div class="row">
+                        <div class="col-lg-5"> <div class="footer-col">
                             <ul class="navlink-content-footer">
                                 <li class="h6heading">Boats & Motors</li>
                                 <li class="footerli">
@@ -589,9 +597,8 @@
                                 <li class="footerli">Financing</li>
                                 <li class="footerli border-0">Trade / Sell Your Boat</li>
                             </ul>
-                        </div>
-
-                        <div class="footer-col">
+                        </div></div>
+                        <div class="col-lg-5 px-3 px-lg-5"><div class="footer-col">
                             <ul class="navlink-content-footer">
                                 <li class="h6heading">Brands</li>
                                 <li class="footerli">
@@ -613,9 +620,8 @@
                                     <p>StabiCraft</p> <img src="./assets/images/home/Arrow 3.png" alt="">
                                 </li>
                             </ul>
-                        </div>
-
-                        <div class="footer-col">
+                        </div></div>
+                        <div class="col-lg-2 pt-4 pt-lg-0"> <div class="footer-col">
                             <ul class="navlink-content-footer">
                                 <li class="h6heading">MORE</li>
                                 <li>Gallery</li>
@@ -624,12 +630,14 @@
                                 <li>Careers</li>
                                 <li>Contact</li>
                             </ul>
-                        </div>
+                        </div></div>
                     </div>
+                    <!-- <div class="footer-links-grid"> -->
+                    <!-- </div> -->
                 </div>
 
                 <div class="footer-right-nodev1">
-                    <div class="foot-rightNo">
+                    <div class="foot-rightNo mx-auto pb-0">
                         <div class="footer-right-nodev">
                             <a href="javascript:void(0)" class="footer-a">Eugene &gt;</a>
                             <h3 class="h4heading mt-1">541.688.5483</h3>

@@ -79,6 +79,15 @@ $(document).ready(function(){
         $(".location-menu-wraper").fadeOut()
     })
 }) 
+$(document).ready(function(){
+    $(".menu-closebutton").on("click",function(){
+        $(".menuinv-wrapper").fadeOut()
+        $(".service-menu-rapper").fadeOut()
+        $(".more-manu-content").fadeOut()
+        $(".location-menu-wraper").fadeOut()
+
+    })
+})   
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.getElementById("mobile-manu-icon-item");
     const leftNav = document.querySelector(".LeftNavigation");
