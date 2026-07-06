@@ -860,7 +860,7 @@ nav {
 .service-hero-wrapper {
     position: relative;
     padding-top: 29%;
-    min-height: 390px;
+    min-height: 590px;
 }
 
 .service-hero-wrapper img {
@@ -3499,7 +3499,9 @@ nav {
         gap: 20px;
         top: 10px;
     }
-
+.service-hero-wrapper{
+    min-height: 390px;
+}
 }
 
 
