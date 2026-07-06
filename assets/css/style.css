@@ -777,6 +777,7 @@ nav {
     background: #fff;
     max-width: 420px;
     margin: 30px auto;
+  
 }
 
 .mapouter,
@@ -798,6 +799,18 @@ nav {
     padding: 24px 0 40px 0;
     height: 100%;
 
+}
+
+.map-content h5 {
+    color: var(--Blackish, #221F20);
+    text-align: center;
+
+    /* h5 */
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /* <!-- Location section end -------------------------------> */
@@ -2408,6 +2421,49 @@ nav {
     /* 150% */
 }
 
+.yearmodel-note {
+    width: 100%;
+    max-width: 420px;
+    height: 39px;
+    background: #F7F7F7;
+}
+
+.yearmodel-notearea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+@media (max-width:1199px) {
+
+    .rightheadboat {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .search-box {
+        width: 220px;
+    }
+
+    .sort-select {
+        min-width: 160px;
+    }
+
+    .yearmodel-note {
+        width: 100%;
+    }
+
+    .dark-btn,
+    .gray-btn {
+        width: 200px;
+    }
+
+    .cardbackcolor {
+        height: 300px;
+    }
+
+}
+
 /* right side of card----------------------------------- */
 /* lisiting stacked page css ---------------------------------------------------- */
 /* about page css about section ---------------------*/
@@ -3491,17 +3547,19 @@ nav {
         margin-top: 10px;
         margin-bottom: 15px;
     }
-      .h5heading{
+
+    .h5heading {
         font-size: 23px;
     }
-  
+
     .locationheroContent {
         gap: 20px;
         top: 10px;
     }
-.service-hero-wrapper{
-    min-height: 390px;
-}
+
+    .service-hero-wrapper {
+        min-height: 390px;
+    }
 }
 
 
@@ -3565,11 +3623,6 @@ nav {
 
     }
 
-    .whitebtn {
-
-        width: 100%;
-
-    }
 
     .bluebtn {
 
@@ -3682,14 +3735,17 @@ nav {
     .location-section {
         padding-bottom: 0;
     }
-      .h5heading{
+
+    .h5heading {
         font-size: 19px;
     }
-    .h8heading{
+
+    .h8heading {
         font-size: 40px;
         line-height: 40px;
         font-weight: 200px;
     }
+
     .locationheroContent {
         gap: 20px;
         top: 40px;
@@ -4294,14 +4350,17 @@ nav {
     .Brochures-Downloads {
         margin: 120px 0;
     }
-    .h5heading{
+
+    .h5heading {
         font-size: 19px;
     }
-    .h8heading{
+
+    .h8heading {
         font-size: 40px;
         line-height: 40px;
         font-weight: 200px;
     }
+
     .locationheroContent {
         gap: 20px;
         top: 40px;
